@@ -11,7 +11,7 @@ params:
     - "Code"
     - "Program"
     - "Linux"
-  description: "A personal blog"
+  description: ""
 
 menu:
   footer:
@@ -21,21 +21,9 @@ menu:
     - name: "archives"
       url: "/archives/"
       weight: 2
-    - name: "categories"
-      url: "/categories/"
-      weight: 3
     - name: "tags"
       url: "/tags/"
-      weight: 4
-    - name: "series"
-      url: "/series/"
-      weight: 5
-    - name: "links"
-      url: "/links/"
-      weight: 6
-    - name: "blogroll"
-      url: "/blogroll/"
-      weight: 7
+      weight: 3
 
   icon:
     - name: "rss"

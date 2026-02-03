@@ -19,10 +19,6 @@ export const onRequest: MiddlewareHandler = async (context, next) => {
     return redirect(url, '/404.html/')
   }
 
-  if (pathname === '/en-US' || pathname.startsWith('/en-US/')) {
-    return redirect(url, pathname.replace(/^\/en-US(\/|$)/, '/en-us$1'))
-  }
-
   if (pathname === '/page' || pathname.startsWith('/page/')) {
     // Let the page router handle /page/<n>/.
   }

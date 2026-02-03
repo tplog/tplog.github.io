@@ -2,7 +2,6 @@
 export const prerender = true
 
 import BaseLayout from '../layouts/BaseLayout.astro'
-import CommentEmbed from '../components/CommentEmbed.astro'
 import { getTranslation, loadContentIndex } from '../lib/site-data'
 
 export async function getStaticPaths() {
@@ -79,7 +78,5 @@ const taxonomyGroups: Array<{ name: 'tags' | 'categories' | 'series'; slugs: str
       ))}
     </div>
 
-    <hr class="border-gray-200 dark:border-gray-700 mt-10 mb-4" />
-    <CommentEmbed />
   </article>
 </BaseLayout>
