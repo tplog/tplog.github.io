@@ -19,7 +19,7 @@ menu:
       url: "/about"
       weight: 1
     - name: "archives"
-      url: "/archives/"
+      url: "/"
       weight: 2
     - name: "tags"
       url: "/tags/"

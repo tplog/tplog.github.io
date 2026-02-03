@@ -55,20 +55,6 @@ export async function GET() {
     urls.add(`/tags/${slug}/index.xml`)
   }
 
-  urls.add('/categories/')
-  urls.add('/categories/index.xml')
-  for (const slug of Object.keys(legacy.taxonomies.categories)) {
-    urls.add(`/categories/${slug}/`)
-    urls.add(`/categories/${slug}/index.xml`)
-  }
-
-  urls.add('/series/')
-  urls.add('/series/index.xml')
-  for (const slug of Object.keys(legacy.taxonomies.series)) {
-    urls.add(`/series/${slug}/`)
-    urls.add(`/series/${slug}/index.xml`)
-  }
-
   urls.add('/sitemap.xml')
 
   const now = new Date().toISOString()

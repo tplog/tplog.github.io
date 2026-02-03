@@ -26,10 +26,8 @@ const publishedAt = page.date
   }).format(new Date(page.date))
   : null
 
-const taxonomyGroups: Array<{ name: 'tags' | 'categories' | 'series'; slugs: string[] }> = [
-  { name: 'categories', slugs: page.categories },
-  { name: 'tags', slugs: page.tags },
-  { name: 'series', slugs: page.series }
+const taxonomyGroups: Array<{ name: 'tags'; slugs: string[] }> = [
+  { name: 'tags', slugs: page.tags }
 ].filter((g) => g.slugs.length > 0)
 ---
 

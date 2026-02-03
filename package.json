@@ -1,7 +1,7 @@
 {
   "name": "tplog",
   "version": "0.2.0",
-  "description": "A personal blog",
+  "description": "",
   "main": "index.js",
   "author": "tplog",
   "license": "MIT",

@@ -21,7 +21,7 @@
   translation: "tplog"
 
 - id: site_description
-  translation: "A personal blog"
+  translation: ""
 
 - id: archives
   translation: "Archives"
