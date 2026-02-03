@@ -1,17 +1,17 @@
-baseURL: "https://xuanwo.io"
+baseURL: "https://tplog.github.io"
 languageCode: "en-US"
-title: "Xuanwo's Blog"
+title: "tplog"
 pagination: 10
 
 params:
   smartToc: true
-  author: "Xuanwo"
+  author: "tplog"
   keywords:
     - "Technology"
     - "Code"
     - "Program"
     - "Linux"
-  description: "Achieving Data Freedom Through Open Source and Rust"
+  description: "A personal blog"
 
 menu:
   footer:
@@ -42,11 +42,5 @@ menu:
       url: "/index.xml"
       weight: 1
     - name: "github"
-      url: "https://github.com/Xuanwo"
+      url: "https://github.com/tplog"
       weight: 2
-    - name: "send"
-      url: "https://t.me/xuanwo_tweets"
-      weight: 3
-    - name: "twitter"
-      url: "https://twitter.com/OnlyXuanwo"
-      weight: 4

@@ -21,10 +21,10 @@
   translation: "年"
 
 - id: site_title
-  translation: "漩涡的博客"
+  translation: "tplog"
 
 - id: site_description
-  translation: "通过开源和 Rust 实现数据自由"
+  translation: "个人博客"
 
 - id: archives
   translation: "归档"

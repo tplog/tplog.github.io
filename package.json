@@ -1,9 +1,9 @@
 {
-  "name": "harbor",
+  "name": "tplog",
   "version": "0.2.0",
-  "description": "A theme for https://xuanwo.io",
+  "description": "A personal blog",
   "main": "index.js",
-  "author": "Xuanwo",
+  "author": "tplog",
   "license": "MIT",
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.12",

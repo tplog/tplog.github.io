@@ -18,10 +18,10 @@
   translation: "There is not content here."
 
 - id: site_title
-  translation: "Xuanwo's Blog"
+  translation: "tplog"
 
 - id: site_description
-  translation: "Achieving Data Freedom Through Open Source and Rust"
+  translation: "A personal blog"
 
 - id: archives
   translation: "Archives"
