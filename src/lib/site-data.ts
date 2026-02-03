@@ -52,7 +52,6 @@ export type SiteRecord = {
     icon?: Array<{ name: string; url: string; weight?: number }>
   }
   i18n: Record<string, string>
-  blogroll: Array<{ name: string; url: string; description: string }>
   indexMeta: Record<string, { title?: string; description?: string }>
 }
 
@@ -243,7 +242,6 @@ export function loadSite() {
 
   const config = loadYamlFile(SITE_CONFIG_PATH)
   const i18nList = loadYamlFile(join(REPO_ROOT, 'i18n', 'en-us.yaml'))
-  const blogroll = loadYamlFile(join(REPO_ROOT, 'data', 'blogroll', 'blogroll.yaml'))
 
   const i18n: Record<string, string> = {}
   for (const item of i18nList) i18n[item.id] = item.translation
@@ -256,7 +254,6 @@ export function loadSite() {
     params: config.params ?? {},
     menu: config.menu ?? {},
     i18n,
-    blogroll,
     indexMeta: {}
   }
   return cachedSite
