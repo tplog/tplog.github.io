@@ -1,6 +1,6 @@
 ## My Blog
 
-This repo hosts https://xuanwo.io.
+This repo hosts https://tplog.github.io.
 
 ## Development
 
