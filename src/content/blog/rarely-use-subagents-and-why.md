@@ -5,8 +5,6 @@ pubDate: "Mar 22 2026"
 tags: ["ai"]
 ---
 
-
-
 When collaborating with AI agents, it is easy to fall into a kind of technological fervor: since AI is so powerful, why not spin up multiple sub-agents or use multithreading to process tasks in parallel? Let them write code, search documentation, and run tests simultaneously, while I just sit in the middle acting as a "dispatcher."
 
 It sounds wonderful, but I have been actively resisting this temptation. I insist on not using sub-agents, nor do I engage in parallel dispatching.
