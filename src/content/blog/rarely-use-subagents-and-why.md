@@ -2,6 +2,7 @@
 title: "rarely-use-subagents-and-why"
 description: "Human cognitive bandwidth is limited. Instead of multithreaded dispatching, reserve it for Socratic steering—stepping outside the frame and asking good questions."
 pubDate: "Mar 22 2026"
+tags: ["ai"]
 ---
 
 
