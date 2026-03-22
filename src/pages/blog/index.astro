@@ -23,25 +23,6 @@ const posts = (await getCollection('blog')).sort(
 
     <main class="container padding-large">
 
-      <h1 class="paper text-center">
-        <span class="inline-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="4" width="18" height="16" rx="2" ry="2" />
-            <line x1="7" y1="8" x2="17" y2="8" />
-            <line x1="7" y1="12" x2="17" y2="12" />
-            <line x1="7" y1="16" x2="13" y2="16" />
-          </svg>
-        </span>
-        tplog
-      </h1>
-
-      <p class="paper text-center">
-        Welcome to the official archive of all things scribbled, doodled, typed,
-        or accidentally published. Each post below has been lovingly handcrafted
-        using Astro and PaperCSS, then pinned to this digital bulletin board for
-        your reading pleasure.
-      </p>
-
       <section class="margin-top-large">
         <ul class="flex flex-wrap gap-large no-bullet justify-center">
           {
