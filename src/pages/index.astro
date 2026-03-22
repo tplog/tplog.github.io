@@ -1,3 +1,68 @@
 ---
-return Astro.redirect('/blog');
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="container padding-large">
+
+      <section class="margin-top-large">
+        <ul class="flex flex-wrap gap-large no-bullet justify-center">
+          {
+            posts.map((post) => (
+              <li class="paper padding-small" style="width: 100%; max-width: 420px;">
+                <a href={`/blog/${post.id}/`} class="no-decoration">
+                  {post.data.heroImage && (
+                    <Image
+                      width={720}
+                      height={360}
+                      src={post.data.heroImage}
+                      alt=""
+                      class="img-responsive paper margin-bottom-small"
+                    />
+                  )}
+
+                  <h4 class="margin-none">{post.data.title}</h4>
+
+                  <p class="italic margin-none">
+                    <FormattedDate date={post.data.pubDate} />
+                  </p>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <p class="paper text-center margin-top-large">
+        <span class="inline-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 19h14M5 5h14M5 12h8" />
+          </svg>
+        </span>
+        That’s all for now. More papery posts are already scribbled in the margins.
+      </p>
+
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
