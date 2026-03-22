@@ -26,7 +26,6 @@ const tags = [...tagMap.entries()].sort((a, b) => b[1] - a[1]);
 	<body>
 		<Header />
 		<main class="container padding-large">
-			<h1 class="paper">Tags</h1>
 			<div class="flex gap-small" style="flex-wrap: wrap;">
 				{tags.map(([tag, count]) => (
 					<a href={`/tags/${tag}`} class="paper-btn btn-small">

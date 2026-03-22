@@ -1,13 +1,21 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
-<Layout
-  title="About"
-  description="About Shawn Jiang"
-  pubDate={new Date('March 22 2026')}
->
-  <p class="paper">
-    I'm Shawn Jiang, a software developer who speaks Japanese and Chinese.
-  </p>
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title="About" description="About Shawn Jiang" />
+  </head>
+  <body>
+    <Header />
+    <main class="container padding-large">
+      <p class="paper">
+        I'm Shawn Jiang, a software developer who speaks Japanese and Chinese.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
