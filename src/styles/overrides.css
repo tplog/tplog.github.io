@@ -1,0 +1,14 @@
+/* Custom overrides for PaperCSS defaults */
+
+h1 {
+  font-size: 33.75px !important;
+}
+
+h2 {
+  font-size: 27px !important;
+}
+
+body {
+  font-size: 18px !important;
+  line-height: 27px !important;
+}
