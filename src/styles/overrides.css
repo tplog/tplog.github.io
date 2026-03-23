@@ -20,3 +20,25 @@ body {
   font-size: 18px !important;
   line-height: 27px !important;
 }
+
+/* Mobile overrides */
+@media (max-width: 768px) {
+  .padding-large {
+    padding: 0.5rem !important;
+  }
+
+  .container {
+    margin: 0 0.5rem !important;
+    width: auto !important;
+  }
+
+  article.paper .paper {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.5rem !important;
+  }
+
+  .margin-top-large {
+    margin-top: 0.5rem !important;
+  }
+}
