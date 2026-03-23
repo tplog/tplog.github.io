@@ -36,7 +36,7 @@ const posts = (await getCollection('blog'))
 	<body>
 		<Header />
 		<main class="container padding-large">
-			<h1 class="paper">Tag: {tag}</h1>
+			<h3 class="paper">Tag: {tag}</h3>
 			<ul class="paper">
 				{posts.map((post) => (
 					<li>
