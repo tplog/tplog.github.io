@@ -1,3 +1,10 @@
+---
+title: "Why Skill Directory Structure Matters"
+description: "A memory management lesson for AI agent Skills: why structured context beats bloated single files."
+pubDate: "Mar 27 2026"
+tags: ["ai", "skill", "context"]
+---
+
 # Why Skill Directory Structure Matters
 
 **Writing Skills for AI agents is essentially memory management.** The context window is your limited resource. Use it poorly and the model slows down, misses key points, or forgets instructions. Structure your Skill well and the model stays focused and efficient.
