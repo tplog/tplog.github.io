@@ -24,10 +24,10 @@ const posts = (await getCollection('blog')).sort(
     <main class="container padding-large">
 
       <section class="margin-top-large">
-        <div class="flex flex-wrap gap-large justify-center">
+        <div class="post-grid">
           {
             posts.map((post) => (
-              <div class="paper padding-small" style="width: 100%; max-width: 420px;">
+              <div class="paper padding-small post-card">
                 <a href={`/blog/${post.id}/`} class="no-decoration">
                   {post.data.heroImage && (
                     <Image
