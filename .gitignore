@@ -27,3 +27,7 @@ pnpm-debug.log*
 .npmrc
 .npmrc
 tmp/
+.collaborator
+
+# agent notes
+AGENTS.md
